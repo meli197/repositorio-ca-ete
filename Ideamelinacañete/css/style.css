@@ -1,0 +1,200 @@
+
+
+body {
+  
+   background-position: center;
+
+   text-align: center;
+
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../mult/flores2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding: 12%;
+
+}
+
+
+img { /* Logo */
+    width: 150px;
+    margin: auto;
+    background-position: center;
+    border-radius: 50%;
+    background-size: contain;
+    
+}
+
+
+nav,ul { /* Menú */
+border: 2px;
+}
+
+.block, li  {
+    border: 2px solid  white;
+    width: 1000px;
+    height: 50px;
+    padding: 10px;
+    background-image: url(../mult/rosa-resumen-antecedentes-lineas-verticales-diseno-grafico-vectorial_1164-1438.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 15px;
+    font-size: 20px;
+    
+    
+}
+
+ul { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* around - evently */
+    align-items: center;
+    order: 1;
+    list-style: none;
+    text-decoration: white;
+}
+
+a{
+    color: black;
+    
+}
+
+@media (max-width: 550px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+         
+    }
+}
+
+.Titulos {  /* general */
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to top, lightpink, white);
+}
+
+.Subtitulos {
+    color: white; background-color: salmon;
+
+}
+
+
+/* index */
+
+@keyframes mi-animacion {
+    0% {
+        width: 500px;
+        background:url(../mult/facturas.jpg)
+    }
+    50% {
+        width: 700px;
+        background: url(../mult/pasteleria-mallorca-m.jpg)
+    }
+    100% {
+        width: 1400px;
+        background: url(../mult/macarons.jpg)
+    }
+    
+}
+
+div.animation {
+    width: 1400px;
+    height: 100px;
+    background: url(../mult/macarons.jpg);
+    background-size: cover;
+    animation-name: mi-animacion;
+    animation-delay: 1s;
+    animation-iteration-count:initial;
+    animation-duration: 5s;
+    animation-delay: 10;
+    text-align: center;
+    padding: 10px;
+}
+
+.flex-valoraciones {
+padding: 10px;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.box-valoraciones {
+    background-position: center;
+    margin: 60px;
+   
+    
+}
+
+.Productos { /* Productos */
+    display: grid;
+    grid-template-rows:auto;
+}
+
+.grid-area {
+display: grid;
+    grid-template-areas:
+     "header header header"
+     "main main productos"
+     "footer footer footer";
+   grid-template-columns: repeat(3, 1fr);
+   gap: 10px;
+}
+
+.grid-area {
+   text-align: center;
+   font-size: 12px;
+
+}
+
+.grid-img{
+    border: 1px solid black;
+}
+
+@media (max-width: 550px) {
+    .grid-area {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+table { /* Promociones */
+  
+    padding: 50px 100px 100px 200px; 
+    border: black;
+    background-position: center;
+    position: absolute;
+    font-size: 2rem;
+    
+}
+
+
+.flex-recetas { /* Recetas */
+    background-color: lightpink;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+}
+ .box-recetas {
+  width: 250;
+   height: 110;
+   background-color: white;
+    margin: 70px;
+    background-position: center;
+ }
+
+
+
+fieldset { /* contacto */
+    background-image: url(../mult/form2.jpg);
+    background-size: cover;
+}
+
